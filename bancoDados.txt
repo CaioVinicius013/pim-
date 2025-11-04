@@ -1,0 +1,6 @@
+caio 1.00 1.00 1.00 1.00 reprovou ):
+c 1.00 1.00 1.00 1.00 reprovou
+caio teste 10.00 10.00 10.00 10.00 aprovado
+ca 10.00 10.00 10.00 10.00 aprovado
+caiotes 1.00 1.00 1.00 1.00 reprovou
+yuri 5.00 8.00 8.00 7.00 aprovado
