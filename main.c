@@ -12,12 +12,30 @@ void limparTela(){
 
 }
 
+float lerNota (const char *mensagem){
+	float nota;
+	int verif;
+
+	do {
+	    printf("%s",mensagem);
+	    verif = scanf("%f", &nota);
+	    if (verif != 1){
+            printf("digite apenas numeros!\n");
+            while (getchar() != '\n');
+
+
+		}
+	}while (verif != 1);
+
+	return nota;
+}
+
 void adc() {
     char nome[50];
     char situacao [25];
     float n1, n2, n3, media;
     char opcao;
-    int verif; // variavel da verificao
+
     FILE *arquivo;
 
 
@@ -27,21 +45,13 @@ void adc() {
         if (arquivo == NULL) {
         printf("Erro ao abrir o arquivo.\n");
         return;
-    }
+        }
         printf("Digite o nome do aluno:\n");
         scanf(" %[^\n]", nome); // permite nomes com espaço
 
-
-        //validacao de entrada de dados
-        do {
-            printf("Digite as 3 notas:\n");
-            verif = scanf("%f %f %f", &n1, &n2, &n3);
-                if (verif != 3){
-                    printf("digite apenas numero!!\n");
-                    while (getchar() != '\n');
-                }
-
-        } while (verif != 3);
+        n1 = lerNota("digite a nota da NP1");
+        n2 = lerNota("digite a nota da NP2");
+        n3 = lerNota("digite a nota do PIM");
 
         media = (n1 + n2 + n3) / 3.0;
 
