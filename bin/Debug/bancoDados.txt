@@ -1,0 +1,5 @@
+caio  1.00 1.00 1.00 1.00 reprovou
+yudi 7.00 7.00 7.00 7.00 aprovado
+joao 10.00 10.00 10.00 10.00 aprovado
+caio vinicius  8.00 8.00 8.00 8.00 aprovado
+caqqio 6.00 6.00 6.00 6.00 recuperacao
